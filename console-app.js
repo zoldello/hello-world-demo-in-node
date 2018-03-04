@@ -5,8 +5,8 @@ const fetch = require('node-fetch');
 
 console.log('Hello, world Demo Console App \n');
 
-const messageServiceUrl = process.messageServiceUrl ||
-    'http://localhost:3000/api/message/welcome';
+const baseUrl = process.env.baseUrl || 'http://localhost:3000/api';
+const messageServiceUrl = `${baseUrl}/message/welcome`;
 
 commander
     .version('1.0.0')
@@ -19,7 +19,6 @@ if (commander.welcome) {
         .then(json => {
             console.log(json.text);
         });
-
 } else {
     console.log('Unknown command. Try \'-h command \' ');
 }
