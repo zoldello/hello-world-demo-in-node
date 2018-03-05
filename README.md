@@ -48,3 +48,7 @@ Here is the main parts of the application:
 - ./data/message.js: Service for getting data
 
 - spec- Folder containing unit test
+
+
+## Notes
+- Node's process.env is used for storing configuration. It reads for the machines's environmental variables
