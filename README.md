@@ -4,6 +4,7 @@ This app is a demo of running a service in node and consuming that service in a 
 
 
 ## Running the Application
+Open up a new terminal for this.
 
 ### Get Dependencies
 Get dependencies using npm:
@@ -16,9 +17,11 @@ To run the service, run:
 ```
 npm start
 ```
-
+Keep this running.
 
 ### Running Application
+Open a new terminal for this.
+
 To run the console, run-
 ```
 node console-app -w
