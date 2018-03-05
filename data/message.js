@@ -1,5 +1,5 @@
 class Message {
-	welcome() {
+	read() {
 		let messageModel = {
 			'text': 'Hello World',
 			'description': 'welcome message',
