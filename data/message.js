@@ -1,12 +1,13 @@
+class Message {
+	welcome() {
+		let messageModel = {
+			'text': 'Hello World',
+			'description': 'welcome message',
+			'date': 1520220154507
+		};
 
-const message = () => {
-	let messageModel = {
-		'text': 'Hello World',
-		'description': 'welcome message',
-		'date': Date.now()
-	};
+		return messageModel;
+	}
+}
 
-	return messageModel;
-};
-
-module.exports = message;
+module.exports = Message;

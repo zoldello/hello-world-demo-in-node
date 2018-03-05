@@ -1,9 +1,7 @@
-#!/usr/bin/env node
-
 const commander = require('commander');
 const fetch = require('node-fetch');
 
-console.log('Hello, world Demo Console App \n');
+//console.log('Hello, world Demo Console App \n');
 
 const baseUrl = process.env.baseUrl || 'http://localhost:3000/api';
 const messageServiceUrl = `${baseUrl}/message/welcome`;

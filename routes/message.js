@@ -1,12 +1,13 @@
 const express = require('express');
-const messageData = require('../data/message');
+const MessageDataService = require('../data/message');
 
 const router = express.Router();
 
-router.get('/welcome', function(req, res, next) {
-    const data = messageData();
+router.get('/welcome', (req, res, next) => {
+    const messageDataService = new MessageDataService();
+    let welcomeData = messageDataService.welcome();
 
-    res.json(data);
+    res.status(200).json(welcomeData);
 });
 
 module.exports = router;
