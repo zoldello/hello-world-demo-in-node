@@ -69,4 +69,4 @@ Here is the main parts of the application:
 
 - The integration test will fail if the server is not running.
 
-- Dynamic languages needed overhead of interfaces. Any non-supported property, event or others is set to undefined. So, interface is not used here.
+- Dynamic languages do not need overhead like interfaces and other command to static languages. Any non-supported property, event or others is set to undefined. So, interface and other common tools used in C# or Typescript are not used here.
