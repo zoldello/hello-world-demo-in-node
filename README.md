@@ -34,11 +34,18 @@ node console-app -h
 
 
 ## Run Test
-Run the unit test by running this command:
+Run the unit test and integration test by running this command:
 ```
 jasmine
 ```
 
+
+## Viewing JSON on a browser
+Go to this url to view the JSON data
+
+```
+http://localhost:3000/api/message/welcome
+```
 
 ## Architecture
 Here is the main parts of the application:
@@ -50,8 +57,10 @@ Here is the main parts of the application:
 
 - ./data/message.js: Service for getting data
 
-- spec- Folder containing unit test
+- spec- Folder containing unit test and integration test. The file name of unit test follow this format: *.unit-test.spec.js. The file name of integration test follows this: *.integration-test.spec.js
 
 
 ## Notes
 - Node's process.env is used for storing configuration. It reads for the machines's environmental variables
+
+- The integration test will fail if the server is not running.
