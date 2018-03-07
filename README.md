@@ -2,27 +2,31 @@
 
 This app is a demo of running a service in node and consuming that service in a console application.
 
+## Get Dependencies
+You need to fetch dependencies after downloading the application. Here is the command:
 
-## Running the Application
-Open up a new terminal for this.
-
-### Get Dependencies
 Get dependencies using npm:
 ```
 npm install
 ```
 
+
+## Running the Application
+You need to have the service running in order for this application to work. After that is done, you can run the console app. The console app will fail if the service is not running.
+
+
+
 ### Running the service
-To run the service, run:
+Open up a new terminal for this. To run the service, run:
+
 ```
 npm start
 ```
 Keep this running.
 
-### Running Application
-Open a new terminal for this.
+### Running Console Application
+Open a new terminal for this. To run the console, run-
 
-To run the console, run-
 ```
 node console-app -w
 ```
@@ -64,3 +68,5 @@ Here is the main parts of the application:
 - Node's process.env is used for storing configuration. It reads for the machines's environmental variables
 
 - The integration test will fail if the server is not running.
+
+- Dynamic languages needed overhead of interfaces. Any non-supported property, event or others is set to undefined. So, interface is not used here.
